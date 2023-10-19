@@ -1,11 +1,11 @@
 {
-    "name": "pass_ease",
-    "short_name": "pass_ease",
+    "name": "PassEase",
+    "short_name": "PassEase",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#FFFFFF",
+    "theme_color": "#00A4F9",
+    "description": "A password viewer and magnifier that offers instant clarity on passwords. Ideal for techies & non-techies alike, elderly, visually impaired, and class/meeting shares.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
