@@ -1,16 +1,5 @@
-# pass_ease
+# PassEase
 
-A new Flutter project.
+PassEase makes it easy to see, handle, copy, and share passwords. It clearly shows tricky characters, so you don't mix up O with 0 or l with I. This cuts down on mistakes. If you struggle to remember long passwords, PassEase breaks them into smaller bits to help. It's a handy tool for techies and non-techies alike, as well as for elderly or visually impaired people. Need to show a password in class or at a meeting? PassEase makes that simple. Plus, if you've ever had to copy a password from one gadget to another without sending it, this tool can help. Best of all, it works online, so there's nothing to download or install. And being open-source, everyone can see how it works and trust it.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![PassEase Screenshot](repo/assets/passease-screenshot.webp)
