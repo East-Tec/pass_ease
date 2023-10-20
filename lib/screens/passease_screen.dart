@@ -124,9 +124,9 @@ class _PassEaseScreenState extends State<PassEaseScreen> {
         utils.launchUrlExternal(context, urls.help);
         break;
 
-      // Launch the external PassEase Safety url
-      case AppDrawerItems.safety:
-        utils.launchUrlExternal(context, urls.safety);
+      // Launch the external PassEase Privacy page url
+      case AppDrawerItems.privacy:
+        utils.launchUrlExternal(context, urls.privacy);
         break;
     }
   }

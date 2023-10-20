@@ -20,6 +20,6 @@ const String tryOurProductsUrl =
 const String help =
     'https://www.east-tec.com/passease/?utm_source=$_utmSource&utm_medium=$_utmMedium&utm_campaign=${_appId}_drawer';
 
-/// The URL for the app's safety information page.
-const String safety =
-    'https://www.east-tec.com/passease/safety/?utm_source=$_utmSource&utm_medium=$_utmMedium&utm_campaign=${_appId}_drawer';
+/// The URL for the app's privacy information page.
+const String privacy =
+    'https://www.east-tec.com/passease/privacy/?utm_source=$_utmSource&utm_medium=$_utmMedium&utm_campaign=${_appId}_drawer';

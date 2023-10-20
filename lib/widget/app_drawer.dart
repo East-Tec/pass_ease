@@ -10,7 +10,7 @@ enum AppDrawerItems {
   keepItFree,
   settings,
   help,
-  safety,
+  privacy,
 }
 
 /// The app drawer.
@@ -65,11 +65,11 @@ class AppDrawer extends StatelessWidget {
             onTap: () => _onItemTap(context, AppDrawerItems.help),
           ),
 
-          // Add the Safety drawer item
+          // Add the Privacy Page drawer item
           ListTile(
             leading: const Icon(Icons.security),
-            title: const Text(strings.safetyDrawerItem),
-            onTap: () => _onItemTap(context, AppDrawerItems.safety),
+            title: const Text(strings.privacyDrawerItem),
+            onTap: () => _onItemTap(context, AppDrawerItems.privacy),
           ),
         ],
       ),

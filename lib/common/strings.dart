@@ -19,7 +19,7 @@ const String keepItFree =
 const String tryOurProductsDrawerItem = 'Try our products for free';
 const String settingsDrawerItem = 'Settings';
 const String helpDrawerItem = 'Help & support';
-const String safetyDrawerItem = 'Are my passwords safe?';
+const String privacyDrawerItem = 'Are my passwords safe?';
 const String openFail = 'Failed to open';
 
 // -----------------------------------------------------------------------------------------------
