@@ -20,14 +20,19 @@ ThemeData appTheme(Brightness brightness) {
       foregroundColor: Colors.white,
     ),
 
-    // The secondary color is East-Tec Blue
     colorScheme: const ColorScheme.dark(
-      secondary: _eastTecBlue,
-      onSecondary: Colors.white,
+      // The primary color(s) are East-Tec Blue and they are used for the switches and sliders
+      primary: _eastTecBlue,
+      onPrimary: Colors.white,
+      primaryContainer: _eastTecBlue,
+    ),
+
+    dialogTheme: DialogTheme(
+      backgroundColor: Colors.grey.shade900,
     ),
 
     // The background color of the dialogs is dark grey
-    dialogBackgroundColor: Colors.grey.shade900,
+    // dialogBackgroundColor: Colors.grey.shade900,
 
     // By default the FABs have a black background and white text
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
@@ -48,17 +53,17 @@ ThemeData appTheme(Brightness brightness) {
     ),
 
     // The text color of text buttons is East-Tec Blue
-    textButtonTheme: TextButtonThemeData(
-      style: TextButton.styleFrom(
-        foregroundColor: _eastTecBlue,
-      ),
-    ),
+    // textButtonTheme: TextButtonThemeData(
+    //   style: TextButton.styleFrom(
+    //     foregroundColor: _eastTecBlue,
+    //   ),
+    // ),
 
     // The selection & cursor colors for text fields are East-Tec Blue
-    textSelectionTheme: const TextSelectionThemeData(
-      cursorColor: _eastTecBlue,
-      selectionColor: _eastTecBlue,
-      selectionHandleColor: _eastTecBlue,
-    ),
+    // textSelectionTheme: const TextSelectionThemeData(
+    //   cursorColor: _eastTecBlue,
+    //   selectionColor: _eastTecBlue,
+    //   selectionHandleColor: _eastTecBlue,
+    // ),
   );
 }

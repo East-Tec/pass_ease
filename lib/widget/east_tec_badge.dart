@@ -30,8 +30,8 @@ class EastTecBadge extends StatelessWidget {
     }
 
     bool isWide = width >= 768;
-    final Color backgroundColor = Theme.of(context).colorScheme.secondary;
-    final Color foregroundColor = Theme.of(context).colorScheme.onSecondary;
+    final Color backgroundColor = Theme.of(context).colorScheme.primary;
+    final Color foregroundColor = Theme.of(context).colorScheme.onPrimary;
 
     // The badge can be (and should be) clickable.
     return InkWell(

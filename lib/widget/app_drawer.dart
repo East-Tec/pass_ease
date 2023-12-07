@@ -41,7 +41,7 @@ class AppDrawer extends StatelessWidget {
 
           // The Try Our Products drawer item
           ListTile(
-            tileColor: Theme.of(context).colorScheme.secondary,
+            tileColor: Theme.of(context).colorScheme.primary,
             leading: const Icon(Icons.free_breakfast),
             title: const Text(strings.tryOurProductsDrawerItem),
             onTap: () => _onItemTap(context, AppDrawerItems.keepItFree),
@@ -91,13 +91,14 @@ class _AppDrawerHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DrawerHeader(
-      margin: EdgeInsets.zero,
-      decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.secondary,
-      ),
+    return Container(
+      color: Theme.of(context).colorScheme.primary,
+      padding: const EdgeInsets.fromLTRB(16.0, 32.0, 16.0, 8.0),
+      // margin: EdgeInsets.zero,
+      // decoration: BoxDecoration(
+      //   color: Theme.of(context).colorScheme.primary,
+      // ),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           // The app name
@@ -106,10 +107,12 @@ class _AppDrawerHeader extends StatelessWidget {
             style: Theme.of(context).textTheme.titleLarge,
           ),
 
+          const SizedBox(height: 32.0),
+
           // The Keep It Free text
           ListTile(
             contentPadding: EdgeInsets.zero,
-            title: const Text(strings.keepItFree),
+            subtitle: const Text(strings.keepItFree),
             onTap: onTryOurProductsTap,
           ),
         ],

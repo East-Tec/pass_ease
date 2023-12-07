@@ -134,7 +134,17 @@ class _ColorTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: color,
+      // The title is filled with the color and the top corners are rounded to match the rounded
+      // bottom corners of the dialog (Material Design 3)
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(28.0),
+          topRight: Radius.circular(28.0),
+        ),
+      ),
+
+      // color: color,
       padding: const EdgeInsets.all(16),
       child: Text(
         color_utils.toHexString(color),

@@ -15,7 +15,7 @@ const String appName = 'PassEase';
 // -----------------------------------------------------------------------------------------------
 
 const String keepItFree =
-    'We are dedicated to keeping PassEase free and open source, and we hope you will support our effort by using our products to protect your privacy and security.';
+    'We are dedicated to keeping PassEase free and open source, and we hope you will support us by using our products to protect your privacy and security.';
 const String tryOurProductsDrawerItem = 'Try our products for free';
 const String settingsDrawerItem = 'Settings';
 const String helpDrawerItem = 'Help & support';
