@@ -6,8 +6,10 @@ library;
 
 import 'package:flutter/material.dart';
 
-/// The main color of the app: East-Tec Blue.
+// The East-Tec colors used in the app.
 const Color _eastTecBlue = Color(0xFF00A4F9);
+const Color _eastTecGrey = Color(0xFF4A4B4B);
+const Color _eastTecGreyDarker = Color(0xFF3A3B3B);
 
 /// Defines the default visual properties for this app's material widgets.
 ///
@@ -25,14 +27,11 @@ ThemeData appTheme(Brightness brightness) {
       primary: _eastTecBlue,
       onPrimary: Colors.white,
       primaryContainer: _eastTecBlue,
-    ),
 
-    dialogTheme: DialogTheme(
-      backgroundColor: Colors.grey.shade900,
+      // Surface colors are used for the background of the Drawer, the Settings screen, and the dialogs
+      surface: _eastTecGrey,
+      surfaceTint: Colors.white,
     ),
-
-    // The background color of the dialogs is dark grey
-    // dialogBackgroundColor: Colors.grey.shade900,
 
     // By default the FABs have a black background and white text
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
@@ -41,23 +40,16 @@ ThemeData appTheme(Brightness brightness) {
     ),
 
     // Sliders have a dark grey background
-    sliderTheme: SliderThemeData(
-      inactiveTrackColor: Colors.grey.shade700,
+    sliderTheme: const SliderThemeData(
+      inactiveTrackColor: _eastTecGreyDarker,
     ),
 
     // The snack bars have a dark grey background and white text
-    snackBarTheme: SnackBarThemeData(
-      backgroundColor: Colors.grey.shade900,
-      contentTextStyle: const TextStyle(color: Colors.white),
+    snackBarTheme: const SnackBarThemeData(
+      backgroundColor: _eastTecGreyDarker,
+      contentTextStyle: TextStyle(color: Colors.white),
       actionTextColor: _eastTecBlue,
     ),
-
-    // The text color of text buttons is East-Tec Blue
-    // textButtonTheme: TextButtonThemeData(
-    //   style: TextButton.styleFrom(
-    //     foregroundColor: _eastTecBlue,
-    //   ),
-    // ),
 
     // The selection & cursor colors for text fields are East-Tec Blue
     // textSelectionTheme: const TextSelectionThemeData(

@@ -26,6 +26,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
     const SizedBox vSpacer = SizedBox(height: 16.0);
 
     return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.surface,
+
       // A simple app bar with just a title.
       appBar: AppBar(
         title: const Text(strings.settingsScreenTitle),
@@ -86,6 +88,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           const Text(strings.chunksSetting),
           const SizedBox(width: 8.0),
           DropdownButton(
+            dropdownColor: Theme.of(context).colorScheme.surface,
             items: settings.chunkLengths.map(chunkLength2Item).toList(),
             value: settings.validateChunkLength(settings.chunkLength),
             // Only enable the dropdown if the chunks setting is on

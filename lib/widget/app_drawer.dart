@@ -91,13 +91,10 @@ class _AppDrawerHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Use a Container instead of a DrawerHeader because the latter has a fixed height
     return Container(
       color: Theme.of(context).colorScheme.primary,
       padding: const EdgeInsets.fromLTRB(16.0, 32.0, 16.0, 8.0),
-      // margin: EdgeInsets.zero,
-      // decoration: BoxDecoration(
-      //   color: Theme.of(context).colorScheme.primary,
-      // ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
