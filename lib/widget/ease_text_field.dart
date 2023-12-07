@@ -130,6 +130,9 @@ class _EaseTextFieldState extends State<EaseTextField> {
       fontFamily: widget.monospacedFont ? 'RobotoMono' : null,
       fontSize: widget.fontSize,
       color: widget.foregroundColor,
+
+      // This is required to make the height of the highlighted char to match the height of the cursor
+      leadingDistribution: TextLeadingDistribution.proportional,
     );
 
     return TextField(

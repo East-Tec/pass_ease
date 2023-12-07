@@ -54,8 +54,11 @@ Future<String?> pasteFromClipboard(BuildContext context) async {
 ///
 /// Shows an error [SnackBar] if there is no support for launching the URL.
 Future<void> launchUrlExternal(BuildContext context, String url) async {
-  ScaffoldMessengerState messengerState = ScaffoldMessenger.of(context);
-  if (!await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication)) {
-    showSnackBar(messengerState, '${strings.openFail} $url');
-  }
+  await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+
+  // TODO: Start reusing this code when launchUrl is fixed and stops returning false for all URLs!
+  // ScaffoldMessengerState messengerState = ScaffoldMessenger.of(context);
+  // if (!(await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication))) {
+  //   showSnackBar(messengerState, '${strings.openFail} $url');
+  // }
 }
