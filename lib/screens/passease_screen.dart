@@ -211,12 +211,13 @@ enum _AppBarActions {
 /// The app bar of the PassEase screen.
 class _AppBar extends StatelessWidget implements PreferredSizeWidget {
   const _AppBar({
-    Key? key,
+    // ignore: unused_element
+    super.key,
     this.hasPassword = false,
     this.hasCurrentChar = false,
     required this.screenWidth,
     required this.onAction,
-  }) : super(key: key);
+  });
 
   /// Whether the user has entered a password.
   final bool hasPassword;

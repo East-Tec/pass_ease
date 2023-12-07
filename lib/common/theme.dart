@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 
 // The East-Tec colors used in the app.
 const Color _eastTecBlue = Color(0xFF00A4F9);
+const Color _eastTecGreyLighter = Color(0xFF5A5B5B);
 const Color _eastTecGrey = Color(0xFF4A4B4B);
 const Color _eastTecGreyDarker = Color(0xFF3A3B3B);
 
@@ -31,6 +32,9 @@ ThemeData appTheme(Brightness brightness) {
       // Surface colors are used for the background of the Drawer, the Settings screen, and the dialogs
       surface: _eastTecGrey,
       surfaceTint: Colors.white,
+
+      // The divider color is the lighter East-Tec Grey
+      outlineVariant: _eastTecGreyLighter,
     ),
 
     // By default the FABs have a black background and white text
@@ -39,12 +43,12 @@ ThemeData appTheme(Brightness brightness) {
       foregroundColor: Colors.white,
     ),
 
-    // Sliders have a dark grey background
+    // Sliders have the lighter East-Tec Grey as the inactive track color
     sliderTheme: const SliderThemeData(
-      inactiveTrackColor: _eastTecGreyDarker,
+      inactiveTrackColor: _eastTecGreyLighter,
     ),
 
-    // The snack bars have a dark grey background and white text
+    // The snack bars have the darker East-Tec Grey background and white text
     snackBarTheme: const SnackBarThemeData(
       backgroundColor: _eastTecGreyDarker,
       contentTextStyle: TextStyle(color: Colors.white),
@@ -52,10 +56,10 @@ ThemeData appTheme(Brightness brightness) {
     ),
 
     // The selection & cursor colors for text fields are East-Tec Blue
-    // textSelectionTheme: const TextSelectionThemeData(
-    //   cursorColor: _eastTecBlue,
-    //   selectionColor: _eastTecBlue,
-    //   selectionHandleColor: _eastTecBlue,
-    // ),
+    textSelectionTheme: const TextSelectionThemeData(
+      cursorColor: _eastTecBlue,
+      selectionColor: _eastTecBlue,
+      selectionHandleColor: _eastTecBlue,
+    ),
   );
 }

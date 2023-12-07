@@ -11,7 +11,7 @@ import 'ease_text_controller.dart';
 /// can also be segmented into chunks for easier reading.
 class EaseTextField extends StatefulWidget {
   const EaseTextField({
-    Key? key,
+    super.key,
     this.initialValue,
     this.fontSize,
     required this.foregroundColor,
@@ -23,7 +23,7 @@ class EaseTextField extends StatefulWidget {
     this.onControllerCreated,
     this.onChanged,
     this.onCurrentCharChanged,
-  }) : super(key: key);
+  });
 
   /// The initial value of the text field.
   final String? initialValue;

@@ -8,10 +8,10 @@ import 'package:flutter/material.dart';
 class EaseTextController extends TextEditingController {
   /// Creates a new [EaseTextController].
   EaseTextController({
-    String? text,
+    super.text,
     this.chunksOn = true,
     this.chunkLength = 4,
-  }) : super(text: text);
+  });
 
   /// Whether the eased text should be segmented into chunks for easier reading.
   final bool chunksOn;
