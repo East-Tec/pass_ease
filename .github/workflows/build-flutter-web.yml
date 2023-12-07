@@ -27,7 +27,7 @@ jobs:
         uses: flutter-actions/setup-flutter@v2
         with:
           channel: stable
-          version: 3.13.8
+          version: 3.16.3
       - name: Clean
         run: flutter clean
       - name: Pub Get
