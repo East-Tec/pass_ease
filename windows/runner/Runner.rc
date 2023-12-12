@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "pass_ease" "\0"
+            VALUE "CompanyName", "East-Tec" "\0"
+            VALUE "FileDescription", "PassEase for Windows" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "pass_ease" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "pass_ease.exe" "\0"
-            VALUE "ProductName", "pass_ease" "\0"
+            VALUE "InternalName", "passease" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2023 East-Tec. All rights reserved." "\0"
+            VALUE "OriginalFilename", "passease.exe" "\0"
+            VALUE "ProductName", "PassEase" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
