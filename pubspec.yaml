@@ -51,6 +51,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.1
+  msix: ^3.16.7
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -95,9 +96,21 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
 
   fonts:
-  - family:  CustomIcons
+  - family: CustomIcons
     fonts:
-      - asset: fonts/CustomIcons.ttf
+      - asset: assets/fonts/CustomIcons.ttf
   - family: RobotoMono
     fonts:
-      - asset: fonts/RobotoMono-Regular.ttf
+      - asset: assets/fonts/RobotoMono-Regular.ttf
+
+msix_config:
+  display_name: PassEase
+  publisher_display_name: East-Tec
+  store: false # Set to true to deploy to Microsoft Store
+  identity_name: com.east-tec.passease
+  msix_version: 1.1.0.0
+  logo_path: assets\msix\app-icon.png
+  architecture: x64
+  output_name: passease
+  # See https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations
+  # capabilities:
